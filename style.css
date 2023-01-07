@@ -322,6 +322,9 @@ ul{
 	form{
 		flex: 100%;
 	}
+	.navbar li a.active::after, .navbar li a:hover::after{
+		display: none;
+	}
 }
 /*-----------all products page--------*/
 .row-2{
@@ -504,6 +507,7 @@ th:last-child{
 	margin: auto;
 	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
 	overflow: hidden;
+	margin-top: 100px;
 }
 .form-container span{
 	font-weight: bold;
