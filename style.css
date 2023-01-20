@@ -446,43 +446,61 @@ th:last-child{
 	margin-left: 800px;
 }
 /*--------contact----------*/
-.containe{
-	width: 100%;
+section{
 	height: 100%;
-	background: #D1ffd2 url(photos/favpng_aloe-vera-herbalism-skin-gel-acne.png);
-	background-color: #D1ffd2;
-	background-size: cover;
+	width: 100%;
 	display: flex;
+	background: url(photos/favpng_aloe-vera-herbalism-skin-gel-acne.png);
+	background-color: #D1ffd2;
 	align-items: center;
 	justify-content: center;
 }
-.containe form{
-	background: #fff;
-	display: flex;
-	flex-direction: column;
-	padding: 2vw 6vw;
-	width: 125%;
-	max-width: 600px;
-	border-radius: 7px;
-	margin: 50px;
+.containe{
+	width: 50%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgb(255, 236, 236);
+	background-color: white;
+	border-radius: 8px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.form-group{
+	margin-top: 20px;
+	width: 100%;
+	font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+width: 100%;
+padding: 5px;
+font-size: 18px;
+border: lpx solid rgba(128,128,128,0.199);
+margin-top: 5px;
 }
 .containe form h3 {
-	color: #555;
+	color: black;
 	font-weight: 800;
 	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
-.containe form input, form textarea{
-	border: 0;
-	margin: 10px 0;
-	padding: 20px;
-	outline: none;
-	background: #f5f5f5;
-	font-size: 16px;
+.containe form h3::after{
+    content:'';
+	background: green;
+	width: 90px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 25px;
 }
 .containe form button{
 	padding : 15px;
-	background: green;
-	color: #fff;
+	background: #14bf1a;
+	color: #f5f5f5;
 	font-size: 18px;
 	border: 0;
 	outline: none;
@@ -490,7 +508,18 @@ th:last-child{
 	width:150px;
 	margin: 20px auto 0;
 	border-radius: 30px;
-	
+}
+.containe form button:hover{
+	background: green;
+}
+#status{
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 8px;
+	color: #14bf1a;
 }
 /*----------account-page---------*/
 .account-page{
