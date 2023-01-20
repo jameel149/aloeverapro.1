@@ -614,4 +614,8 @@ form a{
 	.cart-info p{
 		display: none;
 	}
+	.containe{
+		width: 80%;
+		height: 50%;
+	}
 }
