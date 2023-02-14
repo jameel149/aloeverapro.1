@@ -269,6 +269,12 @@ ul{
 	margin-left: 20px;
 	display: none;
 }
+.ar{
+	font-weight: 600;
+}
+.en{
+	font-weight: 600;
+}
 /*--------media query for menu--------*/
 @media only screen and (max-width: 800px){
 	nav ul{

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aloevera Pro |Contact</title>
+	<title>ألوفيرا برو | التواصل</title>
 	<link rel="icon" href="photos/e3a8e882-dad8-49c9-a01c-0d8243ed9422-removebg.png" type="image/x-icon"/>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600;800&display=swap" rel="stylesheet">
@@ -19,48 +19,48 @@
 	</head>
 <body>
 	<div class="somo">
-	<div class="navbar">
-		<div class="logo">
-			<img src="photos/e3a8e882-dad8-49c9-a01c-0d8243ed9422-removebg.png" width="125px">
+		<div class="navbar">
+			<div class="logo">
+				<img src="photos/e3a8e882-dad8-49c9-a01c-0d8243ed9422-removebg.png" width="125px">
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index-ar.html">صفحة الرئيسية</a></li>
+					<li><a href="products-ar.html">منتجات</a></li>
+					<li><a href="offers-ar.html">عروض</a></li>
+					<li><a class="active" href="contact-ar.html">التواصل</a></li>
+					<li><a href="account-ar.html">الحساب</a></li>
+				</ul>
+			</nav>
+			<a href="cart-ar.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+			<img src ="photos/Menu.svg" class="menu-icon" onclick="menutoggle()">
 		</div>
-		<nav>
-			<ul id="MenuItems">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="offers.html">Offers</a></li>
-				<li><a class="active" href="contact.html">Contact</a></li>
-				<li><a href="account.html">Account</a></li>
-			</ul>
-		</nav>
-		<a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
-		<img src ="photos/Menu.svg" class="menu-icon" onclick="menutoggle()">
-	</div>
 	</div>
 <!-----contact------>
 <section>
 	<div class="containe">
 		   <form action="https://formspree.io/f/xgebvpwj" method="POST" id="my-form">
-			<h3>GET IN TOUCH</h3>
+			<h3>تواصل معنا</h3>
 		   <div class=" form-group">
-		   <label for="firstName"> First Name</label>
+		   <label for="firstName">إسم الأول</label>
 		   <input type="text" id="firstName" name="firstName">
 		   </div>
 		   <div class="form-group">
-		   <label for="1atsName">Last Name</label>
+		   <label for="1atsName">إسم الأخير</label>
 		   <input type="text" id="lastName" name="lastName">
 		   </div>
 
 		   <div class="form-group">
-		   <label for="emai1">Email</1abe1>
+		   <label for="emai1">إيميل</1abe1>
 		   <input type="email" id="email" name="email">
 		   </div>
 
 		   <div class="form-group">
-		   <label for="massage">Massage</label>
+		   <label for="massage">الرسالة</label>
 		   <textarea name="massage" id="massage" cols="30" rows="6"></textarea>
 		   </div>
 		   
-		   <button type="submit">Submit</button>
+		   <button type="submit">تسليم</button>
 		   <div id="status"></div>
 		  </form>
 	</div>
@@ -82,19 +82,19 @@ async function handleSubmit(event) {
 	}
   }).then(response => {
 	if (response.ok) {
-	  status.innerHTML = "Thanks for your submission!";
+	  status.innerHTML = "شكرا على إرسالك!";
 	  form.reset()
 	} else {
 	  response.json().then(data => {
 		if (Object.hasOwn(data, 'errors')) {
 		  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
 		} else {
-		  status.innerHTML = "Oops! There was a problem submitting your form"
+		  status.innerHTML = "عفوًا! حدثت مشكلة أثناء إرسال النموذج الخاص بك"
 		}
 	  })
 	}
   }).catch(error => {
-	status.innerHTML = "Oops! There was a problem submitting your form"
+	status.innerHTML = "عفوًا! حدثت مشكلة أثناء إرسال النموذج الخاص بك"
   });
 }
 form.addEventListener("submit", handleSubmit)
@@ -105,28 +105,29 @@ form.addEventListener("submit", handleSubmit)
 		<div class="row">
 			<div class="footer-col-2">
 				<img src="photos/e3a8e882-dad8-49c9-a01c-0d8243ed9422-removebg.png">
-				<p>We produce the best for your precious hair your satisfaction is our most important goal </p>
+				<p>نحن ننتج الأفضل لشعرك الثمين رضاك هو هدفنا الأكثر أهمية.</p>
 			</div>
 			<div class="footer-col-3">
-				<h3> Useful links</h3>
+				<h3>روابط مهمة</h3>
 				<ul>
-					<li><a href="https://goo.gl/maps/aH9ntbMccahSTnPz6">Number one salon location</a></li>
+					<li><a href="https://goo.gl/maps/aH9ntbMccahSTnPz6">موقع صالون نمبر ون</a></li>
 				</ul>
 			</div>
 			<div class="footer-col-4">
-				<h3>Follow us</h3>
+				<h3>تابعنا</h3>
 				<ul>
-					<li> <a href="https://www.facebook.com/aloeveraprotr"> Facebook </a></li>
-					<li> <a href="https://www.instagram.com/aloeveraprotr/">Instagram</a></li>
-					<li><a href="https://www.tiktok.com/@aloeveraprotr?is_from_webapp=1&sender_device=pc">Tiktiok</a></li>
-					<li><a href="https://t.me/aloev-eraprotr">Telegram</a></li>
+					<li> <a href="https://www.facebook.com/aloeveraprotr">فيسبوك</a></li>
+					<li> <a href="https://www.instagram.com/aloeveraprotr/">إنستاقرام</a></li>
+					<li><a href="https://www.tiktok.com/@aloeveraprotr?is_from_webapp=1&sender_device=pc">تيكتوك</a></li>
+					<li><a href="https://t.me/aloeveraprotr">تيليقرام</a></li>
 				</ul>
 			</div>
 		</div>
-		<a class="ar" href="contact-ar.html">AR</a><a>/</a><a class="en" href="contact.html"style="color: rgb(137, 255, 137);">EN</a>
+		<a class="ar" href="contact-ar.html" style="color: rgb(137, 255, 137);">عربية</a><a>/</a><a class="en" href="contact.html">EN</a>
 		<hr>
-		<p class="copyright">Copyright 2023 - Aloevera Pro Trading Company</p>
+		<p class="copyright">حقوف النشر و الطباعة 2023 - شريكة ألوفيرا برو التجارية</p>
 	</div>
+</div>
 </div>
 <!----------js for toggle menu-------->
 	<script>
